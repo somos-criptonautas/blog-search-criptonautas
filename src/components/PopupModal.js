@@ -213,7 +213,7 @@ function TagResults({tags, selectedResult, setSelectedResult}) {
     });
     return (
         <div className='border-t border-gray-200 py-3 px-4 sm:px-7'>
-            <h1 className='uppercase text-xs text-neutral-400 font-semibold mb-1 tracking-wide'>Tags</h1>
+            <h1 className='uppercase text-xs text-neutral-400 font-semibold mb-1 tracking-wide'>Canales</h1>
             {TagItems}
         </div>
     );
@@ -393,7 +393,7 @@ function PostResults({posts, selectedResult, setSelectedResult}) {
     });
     return (
         <div className='border-t border-neutral-200 py-3 px-4 sm:px-7'>
-            <h1 className='uppercase text-xs text-neutral-400 font-semibold mb-1 tracking-wide'>Posts</h1>
+            <h1 className='uppercase text-xs text-neutral-400 font-semibold mb-1 tracking-wide'>Artículos</h1>
             {PostItems}
             <ShowMoreButton setMaxPosts={setMaxPosts} maxPosts={maxPosts} posts={posts} />
         </div>
@@ -454,7 +454,7 @@ function AuthorResults({authors, selectedResult, setSelectedResult}) {
 
     return (
         <div className='border-t border-neutral-200 py-3 px-4 sm:px-7'>
-            <h1 className='uppercase text-xs text-neutral-400 font-semibold mb-1 tracking-wide'>Authors</h1>
+            <h1 className='uppercase text-xs text-neutral-400 font-semibold mb-1 tracking-wide'>Nautas</h1>
             {AuthorItems}
         </div>
     );
@@ -575,7 +575,7 @@ function Results({posts, authors, tags}) {
 function NoResultsBox() {
     return (
         <div className='py-4 px-7'>
-            <p className='text-[1.65rem] text-neutral-400 leading-normal'>Sin resultados. Prueba otra palabra! ✌</p>
+            <p className='text-[2rem] text-neutral-400 leading-normal'>Sin resultados. Prueba otra palabra! ✌</p>
         </div>
     );
 }
@@ -585,7 +585,7 @@ function Search() {
     return (
         <>
             <div
-                className='h-screen w-screen pt-20 antialiased z-50 relative ghost-display'
+                className='h-screen w-screen pt-search antialiased z-50 relative ghost-display'
                 onClick={(e) => {
                     e.preventDefault();
                     if (e.target === e.currentTarget) {
