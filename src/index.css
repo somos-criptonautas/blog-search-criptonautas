@@ -14,3 +14,6 @@ body {
 .ghost-display {
     display: block !important;
 }
+.pt-search {
+padding-top: 1.77rem;
+}
