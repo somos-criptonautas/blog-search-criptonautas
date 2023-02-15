@@ -96,9 +96,9 @@ function SearchBox() {
         };
     }, [dispatch]);
 
-    let className = 'z-10 relative flex items-center py-5 px-4 sm:px-7 bg-white rounded-t-lg shadow';
+    let className = 'z-10 relative flex items-center py-5 px-4 sm:px-7 bg-white search rounded-t-lg shadow';
     if (!searchValue) {
-        className = 'z-10 relative flex items-center py-5 px-4 sm:px-7 bg-white rounded-lg';
+        className = 'z-10 relative flex items-center py-5 px-4 sm:px-7 bg-white search rounded-lg';
     }
 
     return (
